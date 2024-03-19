@@ -2,7 +2,7 @@ private typealias Comparison = (Float, Float) -> Boolean
 typealias Restriction<K> = LpProblemScope<K>.() -> Boolean
 typealias ObjectiveFunction<K> = LpProblemScope<K>.() -> Float
 
-class LpProblemScope<K>(
+class LpProblemScope<K> internal constructor(
     private val variablesData: Map<K, Int>
 ) {
     operator fun Float.times(variable: K): Float =
