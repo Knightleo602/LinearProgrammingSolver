@@ -1,5 +1,7 @@
 Linear programming calculator written in kotlin
 
+The idea of this project is to simplify as much as possible the calculation of any linear programming problem using kotlin awesome high order function functionalities
+
 Usage:
 ```kotlin
 val lpProblem = LpProblem("p1", "p2", "p3") {
