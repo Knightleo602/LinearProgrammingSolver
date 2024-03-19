@@ -9,6 +9,8 @@ class LpProblemScope<K> internal constructor(
         variable.value * this
     operator fun Int.times(variable: K): Float =
         variable.value * this
+    operator fun K.times(variable: K): Float =
+        variable.value * value
     val K.value: Float get() = variablesData[this]?.toFloat() ?: 0f
 }
 
